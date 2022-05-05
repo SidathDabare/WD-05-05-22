@@ -43,10 +43,12 @@ body {
   opacity: 0;
 }
 #jumbotron {
-  height: 95vh;
-
+  margin: auto;
+  width: 100%;
+  height: 100vh;
   background: url("./assets/bg.png");
   background-size: cover;
+  background-repeat: no-repeat;
 }
 @keyframes fadeIn {
   from {
@@ -67,11 +69,18 @@ body {
 .badge {
   width: 3rem;
   position: absolute;
-  background-color: rgb(2, 56, 148);
+  background: linear-gradient(
+    125deg,
+    rgba(147, 0, 0, 0.8718837876947654) 45%,
+    rgba(3, 41, 89, 1) 45%
+  );
   color: rgb(244, 244, 244);
+  border-radius: 3px 0 7px 0;
 }
 .container {
   margin: auto;
+  top: 50px;
+  height: 80vh;
   justify-content: space-between;
 }
 .card {
@@ -80,11 +89,29 @@ body {
 .card:hover {
   padding: 3px;
   margin-top: -8px;
-  box-shadow: rgba(149, 149, 149, 0.35) 0px 5px 15px;
+  box-shadow: rgba(1, 68, 87, 0.35) 0px 5px 15px;
+}
+.details {
+  display: flex;
+  justify-content: space-between;
+  color: rgb(186, 186, 186);
 }
 /* .card-img-top {
   width: 100%;
 } */
+#tableContainer th,
+td {
+  border-bottom: 1px solid gray;
+}
+#addTrack {
+  position: fixed;
+  left: 0;
+  bottom: 20px;
+  border-radius: 0 7px 7px 0;
+}
+#addTrack:hover {
+  box-shadow: rgba(5, 166, 210, 0.701) 0px 2px 15px;
+}
 
 @media (max-width: 1200px) {
   .card {
