@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+}
+.navbar {
+  z-index: 1;
+}
+#logo {
+  height: 30px;
+}
+#search-icon {
+  position: absolute;
+  margin-left: -55px;
+  cursor: pointer;
+  height: 20px;
+}
+.nav-links li img {
+  height: 20px;
+  fill: white;
+  position: relative;
+  margin-top: -3px;
+}
+.nav-links li a {
+  font-size: 18px;
+  color: white !important;
+  font-weight: 600;
+}
+.nav-links li a:hover {
+  color: rgb(8, 206, 236) !important;
+}
+.nav-links li a img:hover {
+  color: rgb(8, 206, 236) !important;
+}
+/* .active {
+  color: aqua !important;
+} */
+
+/* .container {
+  font-family: "Inter", sans-serif;
+  color: white !important;
+} */
+.card-img-top {
+  max-width: 18rem;
+}
+.controllers {
+  min-width: 300px;
+}
+.controllers button {
+  height: 50px;
+  width: 50px;
+  background-color: rgba(94, 94, 94, 0.676);
+  border-radius: 50%;
+  margin: auto;
+  padding: 0 5px 0 5px;
+}
+.controllers button img {
+  height: 20px;
+  width: 20px;
+  padding: 3px;
+}
+.table {
+  border: none !important;
+}
+.tableContainer .table td,
+.tableContainer .table th {
+  border-top: none;
+}
+
+@media (max-width: 1400px) {
+  .container {
+    width: 100%;
+  }
+  .header {
+    display: flex;
+    justify-content: space-around;
+    min-width: 100%;
+  }
+  .album-image {
+    min-width: 45%;
+  }
+
+  .album-name {
+    justify-content: center;
+    width: 45%;
+    text-align: justify;
+  }
+}
+@media (max-width: 1100px) {
+  .header {
+    display: flex;
+    width: 100%;
+  }
+}
+@media (max-width: 900px) {
+  .container {
+    justify-content: center;
+    width: 90%;
+  }
+  .header {
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+  }
+  .album-image {
+    width: 100%;
+    margin: auto;
+  }
+  .card {
+    width: 100%;
+  }
+
+  .album-name {
+    position: relative;
+    text-align: center;
+    flex-wrap: wrap;
+    min-width: 100%;
+  }
+  .controllers {
+    margin: auto;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+  .header {
+    display: flex;
+    min-width: 90%;
+  }
+  .album-image {
+    max-width: 100%;
+    margin: auto;
+  }
+
+  .card {
+    width: 100%;
+  }
+  .album-name {
+    width: 90%;
+    text-align: justify;
+  }
+  .controllers {
+    margin: auto;
+    justify-content: flex-start;
+  }
+}

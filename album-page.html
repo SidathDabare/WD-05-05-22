@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="album.css" />
+    <title>Music Card</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-transparent border-bottom mt-2 pb-2">
+      <a class="navbar-brand" href="./index.html"
+        ><img id="logo" src="./assets/logo.svg" alt=""
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto nav-links">
+          <li class="nav-item active ml-5">
+            <a class="nav-link" href="#"
+              ><img class="mr-1" src="./assets/home.svg" alt="" /> HOME
+              <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item ml-5">
+            <a class="nav-link" href="#">
+              <img class="mr-1" src="./assets/podcast.svg" alt="" />PODCASTS</a
+            >
+          </li>
+          <li class="nav-item dropdown ml-5">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img class="mr-1" src="./assets/headset.svg" alt="" />
+              LIBRARY
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Music</a>
+              <a class="dropdown-item" href="#">Podcasts</a>
+              <!-- <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a> -->
+            </div>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li> -->
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2 rounded-pill search-bar"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <label for="search-bar"
+            ><img id="search-icon" src="./assets/search.svg" alt=""
+          /></label>
+
+          <button
+            class="btn btn btn-info my-2 my-sm-0 rounded-pill"
+            type="submit"
+          >
+            Sign In
+          </button>
+        </form>
+      </div>
+    </nav>
+    <!-- <div class="header-overlay col-12"></div> -->
+    <div class="container col-11 m-auto">
+      <div class="header col-12 d-flex justify-content-center mt-5">
+        <div class="album-image col-3">
+          <img
+            src="https://m.media-amazon.com/images/I/613BBVSBnEL._UX358_FMwebp_QL85_.jpg"
+            class="card-img-top w-100 rounded"
+            alt="..."
+          />
+        </div>
+        <div class="album-name col-7 w-100 text-white">
+          <h6 class="text-info font-weight-bold fs-6">ALBUM</h6>
+          <h1 class="mt-3 font-weight-bolder">Hybrid Theory</h1>
+          <h5 class="mt-1">Linkin Park</h5>
+          <span class="badge bg-secondary mt-4">HD</span>
+          <p class="text-secondary mt-1">
+            <span class="fs-6">12 SONGS . 43 MINUTES . MAY 14 2007 </span>
+          </p>
+          <div class="controllers d-flex col-5 align-items-center">
+            <button class="btn text-white">
+              <img src="./assets/play.svg" alt="" />
+            </button>
+            <button class="btn text-white">
+              <img src="./assets/shuffle.svg" alt="" />
+            </button>
+            <button class="btn text-white">
+              <img src="./assets/plus.svg" alt="" />
+            </button>
+            <button class="btn text-white">
+              <img src="./assets/radio-sharp.svg" alt="" />
+            </button>
+            <button class="btn text-white">
+              <img src="./assets/ci_share.svg" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-5 tableContainer">
+      <table class="table text-white">
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Wake</td>
+            <td>2.50</td>
+            <td>+</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Given Up</td>
+            <td>3.00</td>
+            <td>+</td>
+          </tr>
+
+          <tr>
+            <th scope="row">3</th>
+            <td>Leave Out All The Rest</td>
+            <td>3.19</td>
+            <td>+</td>
+          </tr>
+          <tr>
+            <th scope="row">1</th>
+            <td>Wake</td>
+            <td>2.50</td>
+            <td>+</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Given Up</td>
+            <td>3.00</td>
+            <td>+</td>
+          </tr>
+
+          <tr>
+            <th scope="row">3</th>
+            <td>Leave Out All The Rest</td>
+            <td>3.19</td>
+            <td>+</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
